@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A fun browser arcade game built with HTML, CSS and JavaScript.">
+  <title>Star Catcher | Mini Arcade Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <a class="brand" href="#">✦ STAR CATCHER</a>
+      <span class="tag">MINI ARCADE</span>
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow">A LITTLE SPACE ADVENTURE</p>
+      <h1>Catch the <span>stars.</span></h1>
+      <p class="subtitle">Collect stars, dodge bombs, and beat your high score.</p>
+    </section>
+
+    <section class="hud" aria-label="Game statistics">
+      <div class="stat"><span class="stat-label">SCORE</span><strong id="score">0</strong></div>
+      <div class="stat"><span class="stat-label">BEST</span><strong id="best">0</strong></div>
+      <div class="stat"><span class="stat-label">LIVES</span><strong id="lives">❤️❤️❤️</strong></div>
+    </section>
+
+    <section class="game-card">
+      <div class="game-area" id="gameArea" aria-label="Game play area">
+        <div class="stars-bg" aria-hidden="true"></div>
+        <div class="overlay" id="overlay">
+          <div class="overlay-icon">🌠</div>
+          <h2 id="overlayTitle">Ready, space explorer?</h2>
+          <p id="overlayText">Catch the ⭐ stars and avoid the 💣 bombs.</p>
+          <button id="startBtn" class="primary-btn">Start Game <span>→</span></button>
+        </div>
+        <div class="player" id="player" aria-label="Player ship">🚀</div>
+      </div>
+      <div class="controls">
+        <span>← → <small>Move</small></span>
+        <span>⭐ <small>+10 points</small></span>
+        <span>💣 <small>Lose a life</small></span>
+      </div>
+    </section>
+
+    <div class="mobile-controls" aria-label="Touch controls">
+      <button id="leftBtn" aria-label="Move left">←</button>
+      <button id="rightBtn" aria-label="Move right">→</button>
+    </div>
+
+    <footer>Built with <strong>HTML · CSS · JavaScript</strong> <span>Have fun! ✨</span></footer>
+  </main>
+  <script src="js/game.js"></script>
+</body>
+</html>
